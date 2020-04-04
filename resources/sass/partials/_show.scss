@@ -1,0 +1,148 @@
+.info-room-navbar { //navbar blu che appare (JS)
+  display: none;
+  background-color: $primary-color-dark;
+  position: fixed;
+  top: $height-header;
+  height: 60px;
+  width: 100%;
+  z-index: 100;
+  .navbar-nav .nav-item .nav-link {
+    padding: 10px;
+  }
+}
+.info-room-navbar .nav-item.active {
+  border-bottom: 2px solid white!important;
+}
+.stacca{
+    margin-top: 150px;
+}
+.room {
+  margin-top: $height-header;
+  padding-bottom: 22px;
+}
+.previev {
+  display: flex;
+  overflow-x: scroll;
+  padding-bottom: 10px;
+  padding-left: 2px;
+}
+.showImgContainer {
+  padding: 0;
+  border: 1px solid black;
+  .room-img-public {
+    width: 100%;
+    height: 300px;
+  }
+}
+//CUSTOM SCROLLBAR PREVIEV CONTAINER
+/* width */
+.previev::-webkit-scrollbar {
+  width: 20px;
+}
+/* Track */
+.previev::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px $primary-color;
+  border-radius: 10px;
+}
+/* Handle */
+.previev::-webkit-scrollbar-thumb {
+  background: $primary-color;
+  border-radius: 10px;
+}
+/* Handle on hover */
+.previev::-webkit-scrollbar-thumb:hover {
+  background: $primary-color-dark;
+}
+// .previev, .top, .bottom {
+//   padding: 0;
+// }
+// .im-left {
+//   height: 300px;
+// }
+// .im-right {
+//   height: 150px;
+// }
+// .room-img {
+//   @extend .room-img-public;
+//   margin: 15px auto;
+// }
+.scrol-left {
+  padding: 20px;
+  h2 {
+    display: inline-block;
+  }
+  .info {
+    margin-top: 30px;
+  }
+  .other-info-container {
+    margin: 20px 0;
+    .other-info {
+      .fas {
+        margin-right: 10px;
+      }
+    }
+  }
+  .description, .services-container, .maps {
+    padding: 20px 0;
+  }
+  .services {
+    display: flex;
+  }
+}
+.section {
+  border-bottom: 1px solid $primary-color-dark;
+}
+.fix-right {
+  padding: 25px;
+  .card-scroll {
+    border: 1px solid $divider-color;
+    border-radius: 5px;
+  }
+}
+.container-admin-img {
+  display: flex;
+  justify-content: center;
+}
+
+.grafici img{
+    width: 400px;
+    height: 400px;
+}
+
+.graphic{
+    margin: 50px;
+    display: inline-block;
+}
+
+#graphic h4{
+    display: block;
+    margin-top: 20px;
+}
+
+.modif{
+    position: relative!important;
+    bottom: 5px;
+}
+#map {
+  height: 300px;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .bottom {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .ul-right {
+    display: none;
+  }
+  .room-img-public {
+    width: 90%;
+    height: 200px;
+  }
+}
+
+.grazie { //per la pagina grazie
+  color: $primary-color-dark;
+  margin: 15% 0 10%;
+}

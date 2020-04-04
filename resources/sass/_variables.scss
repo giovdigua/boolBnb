@@ -1,0 +1,73 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+// custom Colors
+$primary-color-dark: #1976D2;
+$primary-color: #2196F3;
+$primary-color-light: #BBDEFB;
+$primary-color-text: #FFFFFF;
+$accent-color: #03A9F4;
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$divider-color: #BDBDBD;
+
+//custom Variables
+$height-header: 80px;
+
+@mixin searcResults($top, $left) { //setta le proprietà dei risultati del suggerimento ricerca modificando la posizione del riquadro in base ai parametri passati
+  ul {
+    background-color: white;
+    z-index: 100000;
+    list-style-type: none;
+    padding: 10px;
+    border: 1px solid $divider-color;
+    border-radius: 4px;
+    top: $top;
+    left: $left;
+    li {
+      margin: 10px;
+      &:hover {
+        cursor: pointer;
+        color: $primary-color;
+        font-weight: bold;
+      }
+    }
+  }
+}
+@mixin zoom($colorBackground, $colorText) { //da uno zoom sulle card e setta i colori che li passiamo come parametri(primo colore è lo sfondo, secondo colore è il testo)
+  &:hover {
+    background-color: $colorBackground;
+    color: $colorText;
+    transform: scale(1.05);
+    -webkit-box-shadow: 0px 0px 25px 5px $secondary-text-color;
+    -moz-box-shadow: 0px 0px 25px 5px $secondary-text-color;
+    box-shadow: 0px 0px 25px 5px $secondary-text-color;
+  }
+}
+@mixin modalHover() {
+  cursor: pointer;
+  background-color: $primary-color-dark;
+  color: white;
+}
+
+$custom-file-text: (
+  en: "Browse",
+  it: "Scegli"
+);

@@ -1,0 +1,124 @@
+.admin-container {
+    margin-top: $height-header;
+    hr {
+        border: 2px solid $primary-color-dark;
+    }
+    .promo-section .card {
+        height: 460px;
+    }
+    .card {
+        border: 1px solid $primary-color-dark;
+        height: 570px;
+        // min-width: 290px;
+         @include zoom(white, $primary-text-color);
+        .card-img {
+            height: 250px;
+            width: 100%;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .card-body{
+            h5 {
+                height: 25px;
+                overflow-y: hidden;
+            }
+            p {
+                height: 90px;
+                overflow-y: auto;
+            }
+            .btn-apartment-crud {
+                a, form, button {
+                width: 100%;
+                margin: 5px 0;}
+            }
+        }
+    }
+}
+
+.payment-info {
+    & > div {
+        margin: 10px 0;
+    }
+    .button {
+  cursor: pointer;
+  font-weight: 500;
+  left: 3px;
+  line-height: inherit;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+}
+
+.button--small {
+  padding: 10px 20px;
+  font-size: 0.875rem;
+}
+
+.button--green {
+  outline: none;
+  background-color: $primary-color-dark;
+  border-color: $primary-color-dark;
+  color: white;
+  transition: all 200ms ease;
+}
+
+.button--green:hover {
+  background-color: $accent-color;
+  color: white;
+}
+}
+
+.apt-not-visible {
+    filter: blur(2px) grayscale(1);
+}
+
+.promo-section {
+    background-color: $primary-color-light;
+    border: 1px solid $primary-color-dark;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+
+@media (min-width: 768px) {
+    #CC-numb {
+        width: 355px;
+    }
+}
+
+@media (min-width: 960px) {
+    .btn-return {
+        height: 40px;;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .promo-section .card {
+        height: 460px;
+    }
+    .card {
+        height: 475px!important;
+    }
+
+    .promo-section .card {
+        height: 425px !important;
+    }
+
+    .custom-control.custom-switch {
+        padding: 0;
+        text-align: center!important;
+    }
+
+    #stat-btn {
+        width: 95px!important;
+    }
+}

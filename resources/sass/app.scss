@@ -1,0 +1,21 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+// Variables
+@import 'variables';
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+//partials
+@import 'partials/_home';
+@import 'partials/_navbar';
+@import 'partials/_accessForm';
+@import 'partials/_registerForm';
+@import 'partials/_footer';
+@import 'partials/_show';
+@import 'partials/_apartments-index';
+@import 'partials/_general';
+@import 'partials/admin/_admin-navbar';
+@import 'partials/admin/_admin-index';
+@import 'partials/admin/_admin-show';
+@import 'partials/admin/_create';
+//@import 'partials/admin/_edit';
+@import 'partials/admin/_leads-index';

@@ -1,0 +1,130 @@
+.navbar { //per tutte le navbar
+  height: $height-header;
+  background-color: transparent;
+  .navbar-nav{
+    .ita {
+      border-bottom: 2px solid;
+      visibility: hidden;
+    }
+    .nav-item {
+      .nav-link {
+        color: white;
+        font-weight: bold;
+        padding: 20px;
+      }
+      &:hover {
+        border-bottom: 2px solid white;
+      }
+    }
+    .dropdown-menu {
+      .dropdown-item {
+        color: $primary-color-dark;
+        &:hover {
+          color: $accent-color;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .logo {
+    width: 50px;
+    padding: 10px;
+  }
+  .logoBlue {
+    display: none;
+    width: $height-header;
+    padding: 10px;
+  }
+  .collapse.show {
+    z-index: 1000;
+    .navbar-nav {
+      background-color: white;
+      .nav-item {
+        .nav-link {
+          color: $primary-color-dark;
+          font-weight: bold;
+          padding: 20px;
+        }
+      }
+    }
+  }
+  #search {
+    @include searcResults(60px, 96px);
+  }
+}
+.change-prop{ //proprietà che cambiano (JS) quando si fa scroll
+  z-index: 1000;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-box-shadow: 0px -25px 137px 38px $primary-color-dark;
+  -moz-box-shadow: 0px -25px 137px 38px $primary-color-dark;
+  box-shadow: 0px -25px 137px 38px $primary-color-dark;
+  .navbar-nav {
+    background-color: white;
+    .nav-item {
+      .nav-link {
+        color: $primary-color-dark;
+        font-weight: bold;
+        padding: 20px;
+      }
+    }
+  }
+}
+.public-nav .navbar-nav .nav-item .nav-link { //navbar bianca
+  color: $primary-color-dark;
+  font-weight: bold;
+  padding: 20px;
+}
+.logoBlue-visible {
+  width: $height-header;
+  padding: 10px;
+}
+
+//MODAL
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  .flag {
+    width: 30px;
+  }
+  .language:hover{
+    @include modalHover;
+  } .valuta:hover {
+    @include modalHover;
+  }
+}
+.close, .close-lang {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close, .close-lang:hover,
+.close, .close-lang:focus {
+  color: $primary-color;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .navsearch {
+    width: 100px;
+  }
+}

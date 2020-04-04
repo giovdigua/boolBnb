@@ -1,0 +1,15 @@
+//regole generali
+
+.custom-img { //per le immagini nelle card
+  border: 2px solid white;
+  width: 200px;
+  height: 150px;
+  border-radius: 5px;
+}
+.small-text { //se si vuol rimpicciolire un p
+  font-size: 13px;
+}
+
+nav .nav-item.active {
+    border-bottom: 2px solid $primary-color-dark;
+}

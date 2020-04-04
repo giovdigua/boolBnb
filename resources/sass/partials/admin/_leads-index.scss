@@ -1,0 +1,15 @@
+.leads-container {
+  margin-bottom: 30px;
+    hr {
+        border: 2px solid $primary-color-dark;
+    }
+  .card-body {
+    display: none;
+    border: 1px solid $primary-color-dark;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  .message-recev:hover {
+    cursor: pointer;
+  }
+}
